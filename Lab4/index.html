@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №4</title>
+</head>
+
+<body>
+
+  <h1>Лабораторна робота №4</h1>
+
+  <form action="https://httpbin.org/get" method="GET">
+
+    <h2>Форма для введення даних</h2>
+
+    <label for="name">Ваше ім'я:</label>
+    <input type="text" id="name" name="name">
+
+    <br><br>
+
+    <label>
+      Дата народження:
+      <input type="date" name="birthdate">
+    </label>
+
+    <br><br>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email">
+
+    <br><br>
+
+    <label for="message">Ваше повідомлення:</label>
+    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <h3>Ваші улюблені напої?</h3>
+
+    <label>
+      <input type="checkbox" name="drink" value="tea">
+      Чай
+    </label>
+
+    <label>
+      <input type="checkbox" name="drink" value="coffee">
+      Кава
+    </label>
+
+    <label>
+      <input type="checkbox" name="drink" value="juice">
+      Сік
+    </label>
+
+    <label>
+      <input type="checkbox" name="drink" value="water">
+      Вода
+    </label>
+
+    <br><br>
+
+    <h3>Моя національність</h3>
+
+    <label>
+      <input type="radio" name="nationality" value="ukrainian">
+      Українка
+    </label>
+
+    <label>
+      <input type="radio" name="nationality" value="other">
+      Інша
+    </label>
+
+    <label>
+      <input type="radio" name="nationality" value="prefer-not-to-say">
+      Не хочу вказувати
+    </label>
+
+    <br><br>
+
+    <button type="submit">Відправити</button>
+    <button type="reset">Очистити</button>
+
+  </form>
+
+  <h2>Адаптивне зображення</h2>
+
+  <picture>
+    <source
+      media="(max-width: 468px)"
+      srcset="images/images.jpg"
+    >
+
+    <img
+      src="images/istockphoto-1138719512-612x612.jpg"
+      alt="Природа Ужгорода"
+    >
+  </picture>
+
+</body>
+</html>
